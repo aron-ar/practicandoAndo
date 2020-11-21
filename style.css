@@ -186,6 +186,7 @@ body {
 .social-links {
   display: flex;
   margin: 20px auto;
+  transform: scale(1.5);
 }
 
 .social-btn {
@@ -229,7 +230,8 @@ body {
   background: black;
   padding: 0.5em 1em;
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 4em auto;
+  transform: scale(2);
 }
 
 .menu a {
@@ -332,7 +334,7 @@ body {
     inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
 }
 .search-container:hover > .search-input {
-  width: 400px;
+  width: 300px;
 }
 .search-container .search-input {
   background: transparent;
@@ -370,7 +372,7 @@ body {
 
 /* Logo Instagram */
 .container-ig {
-  transform: scale(0.8);
+  transform: scale(0.7);
   height: 450px;
   width: 450px;
   background: radial-gradient(
@@ -429,11 +431,9 @@ body {
   background-color: white;
 }
 .logo-google {
+  transform: scale(0.9);
   width: 130px;
   height: 130px;
-  /* transform: translate(-50px, -50px);
-  top: 50%;
-  left: 50%; */
   position: relative;
   background: #fff;
   border-radius: 50%;
@@ -476,7 +476,9 @@ body {
   height: 100%;
   margin: 1em 0;
 }
-
+.logo-netflix {
+  transform: scale(0.8);
+}
 .netflix {
   position: relative;
   width: 360px;
@@ -1120,3 +1122,80 @@ body {
 }
 
 /* Emoji Angry */
+
+/* Emoji Heart */
+.container-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 1em;
+  margin: 6em;
+}
+.heart {
+  width: 120px;
+  height: 120px;
+  background-color: #f55064;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+  transform: scale(2);
+}
+
+.heart .fas {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  animation: heart-beat 1s linear infinite alternate;
+}
+
+@keyframes heart-beat {
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+}
+/* Emoji Heart */
+
+/* Emoji Like */
+.container-like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 1em;
+  margin: 6em;
+}
+.like {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #548dff;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+  transform: scale(2);
+}
+
+.like .fas {
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 20px;
+  transform-origin: 0% 100%;
+  animation: like 2s linear infinite;
+}
+
+@keyframes like {
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg) translateY(-10px);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Emoji Like */
