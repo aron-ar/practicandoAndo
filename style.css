@@ -605,16 +605,16 @@ body {
 
 /* Logo WhatsApp */
 
-/* Emoji Reactions */
-.container-emoji {
+/* Emoji Happy */
+.container-happy {
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
   padding: 1em;
-  margin: 5em;
+  margin: 6em;
 }
-.emoji {
+.happy {
   width: 120px;
   height: 120px;
   background-color: #ffda6d;
@@ -623,14 +623,14 @@ body {
   transform: scale(2);
 }
 
-.emoji .face {
+.happy .face-happy {
   position: absolute;
   width: inherit;
   height: inherit;
   animation: haha-face 2s linear infinite;
 }
 
-.emoji .eyes {
+.happy .eyes-happy {
   position: absolute;
   width: 26px;
   height: 6px;
@@ -641,7 +641,7 @@ body {
   box-shadow: -25px 5px 0 0 #000, 25px -5px 0 0 #000;
   transform: rotate(20deg);
 }
-.emoji .eyes::after {
+.happy .eyes-happy::after {
   position: absolute;
   content: "";
   width: 26px;
@@ -652,7 +652,7 @@ body {
   transform: rotate(-40deg);
 }
 
-.emoji .mouth {
+.happy .mouth-happy {
   position: absolute;
   width: 80px;
   height: 40px;
@@ -664,7 +664,7 @@ body {
   animation: haha-mouth 2s linear infinite;
 }
 
-.emoji .tongue {
+.happy .tongue-happy {
   position: absolute;
   width: 70px;
   height: 30px;
@@ -720,4 +720,403 @@ body {
   }
 }
 
-/* Emoji Reactions */
+/* Emoji Happy */
+
+/* Emoji Surprised */
+.container-surprised {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 1em;
+  margin: 6em;
+}
+
+.surprised {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #ffda6a;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  transform: scale(2);
+}
+.face-surprised {
+  width: inherit;
+  height: inherit;
+  animation: wow-face 3s linear infinite;
+}
+.eyebrows-surprised {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  top: 15px;
+  left: 57px;
+  border-radius: 50px;
+  box-shadow: -18px 0 0 0 #000, -32px 0 0 0 #000, 18px 0 0 0 #000,
+    32px 0 0 0 #000;
+  animation: wow-brow 3s linear infinite;
+}
+
+.eyebrows-surprised::before,
+.eyebrows-surprised::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 20px;
+  border: 6px solid transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top-color: black;
+  top: -3px;
+}
+
+.eyebrows-surprised::before {
+  margin-left: -34px;
+}
+
+.eyebrows-surprised::after {
+  margin-left: 16px;
+}
+
+.eyes-surprised {
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  left: 52px;
+  top: 35px;
+  border-radius: 50%;
+  box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+.mouth-surprised {
+  position: absolute;
+  width: 30px;
+  height: 45px;
+  background-color: black;
+  border-radius: 50%;
+  left: 45px;
+  top: 50%;
+  animation: wow-mouth 3s linear infinite;
+}
+
+@keyframes wow-face {
+  15%,
+  25% {
+    transform: rotate(20deg) translateX(-25px);
+  }
+  45%,
+  65% {
+    transform: rotate(-20deg) translateX(25px);
+  }
+  75%,
+  100% {
+    transform: rotate(0deg) translateX(0px);
+  }
+}
+
+@keyframes wow-brow {
+  15%,
+  65% {
+    top: 25px;
+  }
+  75%,
+  100%,
+  0% {
+    top: 15px;
+  }
+}
+@keyframes wow-mouth {
+  10%,
+  30% {
+    width: 20px;
+    height: 20px;
+    left: 50px;
+  }
+  50%,
+  70% {
+    width: 30px;
+    height: 30px;
+    left: 40px;
+  }
+  75%,
+  100% {
+    height: 50px;
+  }
+}
+
+/* Emoji Surprised */
+
+/* Emoji Crying */
+
+.container-crying {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 1em;
+  margin: 6em;
+}
+
+.crying {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #ffda6a;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  transform: scale(2);
+}
+.face-crying {
+  position: absolute;
+  animation: sad-face 2s ease-in infinite;
+}
+.eyebrow-crying {
+  position: relative;
+  height: 6px;
+  width: 6px;
+  background-color: transparent;
+  border-radius: 50%;
+  left: 57px;
+  top: 35px;
+  box-shadow: -40px 9px 0 0 #000, -25px 0 0 0 #000, 25px 0 0 0#000,
+    40px 9px 0 0 #000;
+}
+.eyebrow-crying::before,
+.eyebrow-crying::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 20px;
+  border: 6px solid transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  top: 2px;
+  left: -12px;
+  border-top-color: black;
+}
+.eyebrow-crying::before {
+  margin-left: -30px;
+  transform: rotate(-30deg);
+}
+.eyebrow-crying::after {
+  margin-left: 30px;
+  transform: rotate(30deg);
+}
+
+.eyes-crying {
+  position: absolute;
+  width: 14px;
+  height: 16px;
+  left: 53px;
+  top: 50px;
+  border-radius: 50%;
+  box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+.mouth-crying {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  border: 6px solid transparent;
+  box-sizing: border-box;
+  border-radius: 50%;
+  left: 30px;
+  top: 80px;
+  border-top-color: black;
+  animation: sad-mouth 2s ease-in infinite;
+}
+.mouth-crying::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  top: 4px;
+  left: 21px;
+  border-radius: 50%;
+  box-shadow: -18px 0 0 0 #000, 18px 0 0 0 #000;
+}
+
+@keyframes sad-face {
+  25%,
+  35% {
+    top: -15px;
+  }
+  55%,
+  95% {
+    top: 10px;
+  }
+  100%,
+  0% {
+    top: 0px;
+  }
+}
+
+@keyframes sad-mouth {
+  25%,
+  35% {
+    transform: scale(0.85);
+    top: 70px;
+  }
+  55%,
+  100%,
+  0% {
+    transform: scale(1);
+    top: 80px;
+  }
+}
+
+.eyes-crying::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #548dff;
+  border-radius: 0 10px 10px 10px;
+  transform-origin: 0% 0%;
+  animation: tear-drop 2s ease-in infinite;
+}
+
+@keyframes tear-drop {
+  0%,
+  100% {
+    display: block;
+    left: 32px;
+    top: 15px;
+    transform: rotate(45deg) scale(0);
+  }
+  25% {
+    display: block;
+    left: 32px;
+    top: 15px;
+    transform: rotate(45deg) scale(2);
+    z-index: 1;
+  }
+  49.9% {
+    display: block;
+    left: 32px;
+    top: 65px;
+    transform: rotate(45deg) scale(2);
+  }
+  50% {
+    display: block;
+    left: -18px;
+    top: 15px;
+    transform: rotate(45deg) scale(0);
+  }
+  75% {
+    display: block;
+    left: -18px;
+    transform: rotate(45deg) scale(2);
+  }
+  99.9% {
+    display: block;
+    left: -18px;
+    top: 65px;
+    transform: rotate(45deg) scale(2);
+    z-index: 1;
+  }
+}
+
+/* Emoji Crying */
+
+/* Emoji Angry */
+
+.container-angry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 1em;
+  margin: 6em;
+}
+
+.angry {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(#d5234c, #ffda6a);
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+  animation: angry-color 2s ease-in infinite;
+  transform: scale(2);
+}
+.face-angry {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  animation: angry-face 2s ease-in infinite;
+}
+
+.eyebrow-angry {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 57px;
+  top: 55px;
+  border-radius: 50%;
+  box-shadow: -44px 5px 0 0 #000, -9px 16px 0 0, 9px 16px 0 0 #000,
+    44px 5px 0 0 #000;
+}
+
+.eyebrow-angry::before,
+.eyebrow-angry::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 20px;
+  border: 6px solid transparent;
+  box-sizing: border-box;
+  border-bottom-color: black;
+  border-radius: 50%;
+}
+.eyebrow-angry::before {
+  margin-left: -47px;
+  transform: rotate(15deg);
+}
+.eyebrow-angry::after {
+  margin-left: 3px;
+  transform: rotate(-15deg);
+}
+.eyes-angry {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 54px;
+  top: 70px;
+  border-radius: 50%;
+  box-shadow: 25px 0 0 0 #000, -25px 0 0 0 #000;
+}
+.mouth-angry {
+  position: absolute;
+  width: 36px;
+  height: 18px;
+  background: black;
+  left: 42px;
+  bottom: 15px;
+  border-radius: 50%;
+  animation: angry-mouth 2s ease-in infinite;
+}
+
+@keyframes angry-face {
+  35%,
+  60% {
+    transform: translateX(0) translateY(10px) scale(0.9);
+  }
+  40%,
+  50% {
+    transform: translateX(-5px) translateY(10px) scale(0.9);
+  }
+  45%,
+  55% {
+    transform: translateX(5px) translateY(10px) scale(0.9);
+  }
+}
+
+@keyframes angry-mouth {
+  25%,
+  50% {
+    height: 6px;
+    bottom: 25px;
+  }
+}
+
+/* Emoji Angry */
